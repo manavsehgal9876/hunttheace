@@ -86,6 +86,7 @@ document.querySelectorAll('.play-card').forEach(card => {
         points += pointsToBeAlloted;
         document.querySelector('.result').innerHTML = winningTemplate;
       } else {
+        navigator.vibrate(200);
         points -= pointsToBeAlloted;
         document.querySelector('.result').innerHTML = losingTemplate;
         revealAce();
